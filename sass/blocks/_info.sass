@@ -1,0 +1,52 @@
+.info
+  background: url(../img/info/bg.jpg) no-repeat 
+  background-size: cover 
+  background-position: center 
+  background-attachment: fixed
+  height: 700px 
+  & .title 
+    display: flex 
+    flex-direction: column 
+    justify-content: center
+    height: 100%
+    text-align: center
+    align-items: center
+    max-width: 810px 
+    margin: auto
+    & h1 
+      color: #ffffff
+      +bold 
+      font-size: 75px 
+      line-height: 1.1
+    & .btn 
+      margin-top: 40px 
+      & button 
+        text-transform: uppercase
+        background: #736f72
+        color: #ffffff
+        width: 195px 
+        height: 55px 
+        +bold 
+        font-size: 22px 
+        letter-spacing: 1px 
+        border: 1px solid #ffffff
+        z-index: 1
+        transition: .3s linear 
+        position: relative
+        overflow: hidden
+        &:hover::before 
+          transform: translateX(0)
+        &:hover
+          color: #736f72
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: #ffffff
+          transform: translateX(-100%)
+          transition: .3s linear
+          z-index: -1
+ 
