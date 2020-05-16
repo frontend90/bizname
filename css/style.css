@@ -1,0 +1,190 @@
+@font-face {
+  font-family: 'fa-solid-900';
+  src: url("../fonts/fa-solid-900.ttf");
+}
+
+@font-face {
+  font-family: 'fa-brands-400';
+  src: url("../fonts/fa-brands-400.ttf");
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url("../fonts/SourceSansPro-Regular.otf");
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Semibold';
+  src: url("../fonts/SourceSansPro-Semibold.otf");
+}
+
+body {
+  background: #f7f6f3;
+  font-size: 14px;
+  color: #939393;
+  font-family: 'SourceSansPro-Regular';
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header .header-nav {
+  background: #ffffff;
+  padding: 40px 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.header .header-nav .logo h2 {
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.header .header-nav .logo h2 a {
+  color: #736F72;
+}
+
+.header .header-nav .logo h2 a span {
+  color: #FFC000;
+}
+
+.header .header-nav .header-menu .burger {
+  display: none;
+}
+
+.header .header-nav .header-menu .menu {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  bottom: 0;
+  right: 30px;
+}
+
+.header .header-nav .header-menu .menu a {
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-family: 'SourceSansPro-Semibold';
+  font-size: 16px;
+  padding: 25px;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  background: #FFC000;
+  position: relative;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .header-nav .header-menu .menu a:hover {
+  background: #736F72;
+}
+
+.header .header-nav .header-menu .menu a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  background: #ffffff;
+  height: 100%;
+}
+
+.header .header-nav .header-menu .menu a:last-of-type::before {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .header .header-nav .header-menu .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  .header .header-nav .header-menu .burger.active span {
+    display: none;
+  }
+  .header .header-nav .header-menu .burger.active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header .header-nav .header-menu .burger.active::after {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .header .header-nav .header-menu .burger span {
+    background: #736F72;
+    height: 3px;
+    width: 20px;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  .header .header-nav .header-menu .burger::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #736F72;
+    top: 0;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  .header .header-nav .header-menu .burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #736F72;
+    bottom: 0;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+  }
+  .header .header-nav .header-menu .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.7);
+    z-index: 9998;
+    display: none;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .header .header-nav .header-menu .menu a {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+  }
+  .header .header-nav .header-menu .menu a::before {
+    display: none;
+  }
+  .header .header-nav .header-menu .menu.show {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+.header 
+  & .header-nav 
+    background: #ffffff
+    padding: 40px 30px 0
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    position: relative
+    & .logo 
+      & h2 
+        text-transform: uppercase
+        font-size: 45px 
+        & a 
+          color: #736F72
+          & span 
+            color: #FFC000
+    & .header-menu 
+      & .burger 
+        display: none 
+      & .menu 
+        position: absolute
+        display: inline-flex
+        bottom: 0
+        right: 30px 
+        & a 
+          text-transform: uppercase
+          color: #ffffff
+          letter-spacing: 1px 
+          +semi 
+          font-size: 16px
+          padding: 25px 
+          text-shadow: 0 0 1px rgba(255,255,255,0.3)
+          background: #FFC000
+          position: relative
+          transition: .3s linear 
+          &:hover
+            background: #736F72
+          &::before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            width: 1px 
+            background: #ffffff
+            height: 100%
+          &:last-of-type
+            &::before
+              display: none 
+
+          

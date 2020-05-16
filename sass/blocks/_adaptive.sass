@@ -1,0 +1,60 @@
+@media screen and ( max-width: 850px )
+  .header 
+    & .header-nav
+      & .header-menu 
+        & .burger 
+          display: flex 
+          align-items: center
+          justify-content: flex-end
+          width: 30px 
+          height: 20px
+          position: relative 
+          cursor: pointer
+          z-index: 9999
+          &.active span 
+            display: none 
+          &.active::before 
+            transform: rotate(45deg)
+          &.active::after 
+            top: 0
+            transform: rotate(-45deg)
+          & span 
+            background: #736F72
+            height: 3px 
+            width: 20px 
+            transition: .3s linear 
+          &::before
+            content: ''
+            position: absolute
+            width: 30px 
+            height: 3px 
+            background: #736F72
+            top: 0
+            transition: .3s linear 
+          &::after
+            content: ''
+            position: absolute
+            width: 30px 
+            height: 3px 
+            background: #736F72
+            bottom: 0
+            transition: .3s linear  
+        & .menu 
+          position: fixed
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: rgba(#121212,.7)
+          z-index: 9998
+          display: none 
+          text-align: center
+          padding-top: 100px 
+          & a 
+            display: block
+            margin: 20px 0 
+            padding: 10px 
+            &::before
+              display: none 
+          &.show 
+            display: block 
