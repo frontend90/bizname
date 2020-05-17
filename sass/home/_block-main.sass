@@ -1,0 +1,183 @@
+.block-main
+  position: relative
+  z-index: 1
+  & .block-main-wrap 
+    background: #ffffff
+    padding: 40px 15px 80px  
+    display: flex 
+    justify-content: space-between
+    margin-top: -40px 
+    margin-bottom: -40px 
+    & .sidebar 
+      width: 25%
+      padding: 0 15px 
+      & .box
+        & .title 
+          & h4 
+            +bold 
+            background: #ffc000
+            color: #ffffff
+            font-size: 24px 
+            text-align: center
+            padding: 10px 25px 
+            line-height: 1.1
+          & p
+            margin-top: 20px 
+            +semi 
+            font-size: 18px 
+            color: #898688
+            line-height: 1.1
+        & .links 
+          margin-top: 20px 
+          margin-bottom: 30px 
+          & a 
+            display: block 
+            color: #8b8b8b
+            font-size: 16px 
+            padding: 8px 0
+            border-bottom: 1px dashed #8b8b8b
+            transition: .3s linear 
+            position: relative
+            padding-left: 10px 
+            &::before
+              content: ''
+              +solid 
+              font-size: 12px 
+              position: absolute
+              left: 0
+              top: 50%
+              transform: translateY(-50%)
+              color: #ffc000
+            &:hover
+              color: #ffc000
+        & h4 
+          +bold 
+          background: #ffc000
+          text-align: center
+          color: #ffffff
+          font-size: 24px 
+          padding: 10px 25px
+          line-height: 1.1 
+        & img 
+          width: 100%
+        & p 
+          margin-top: 15px 
+          line-height: 1.8em 
+        & a 
+          display: inline-block 
+          margin-top: 15px 
+          font-size: 15px 
+          color: #ffc000
+          transition: .3s linear 
+          &:hover 
+            text-decoration: underline
+          & .fas 
+            +solid 
+            color: #736F72
+            margin-right: 5px   
+    & .main 
+      width: 66.6%
+      padding: 0 15px 
+      & .main-title 
+        border-bottom: 1px solid #e5e5e5
+        padding-bottom: 40px 
+        & .title 
+          border-bottom: 1px solid #e5e5e5
+          padding-bottom: 25px 
+          & h5 
+            font-size: 24px 
+            & a 
+              color: #736F72
+              transition: .3s linear 
+              &:hover
+                color: #ffc000
+          & h6 
+            font-size: 22px 
+            color: #ffc000
+            +light 
+            font-weight: lighter
+        & .main-title-wrap
+          display: flex 
+          justify-content: space-between
+          margin-top: 40px 
+          & .block
+            & p 
+              margin-bottom: 15px 
+              line-height: 1.8em
+            & a 
+              display: inline-block 
+              font-size: 15px 
+              color: #ffc000
+              transition: .3s linear 
+              &:hover 
+                text-decoration: underline
+              & .fas 
+                +solid 
+                color: #736F72
+                margin-right: 5px   
+          & .left 
+            width: 40%
+          & .right 
+            width: 60%
+      & .main-footer-wrap
+        display: flex 
+        margin-top: 40px 
+        justify-content: space-between
+        & .block 
+          width: 47%
+          & .title 
+            display: flex 
+            & .icon 
+              & .fas 
+                +solid 
+                width: 50px 
+                height: 45px 
+                background: #736F72
+                display: flex 
+                align-items: center
+                justify-content: center
+                color: #ffc000
+                font-size: 25px 
+            & .desc 
+              margin-left: 10px 
+              & h5 
+                font-size: 24px 
+                line-height: 1.1
+                & a 
+                  color: #736F72
+                  transition: .3s linear 
+                  &:hover
+                    color: #ffc000
+              & h6 
+                margin-top: 10px 
+                color: #ffc000
+                font-size: 22px 
+                +light 
+                font-weight: lighter
+                line-height: 1.1
+          & .content 
+            margin-top: 25px 
+            & img 
+              width: 100%
+            & p 
+              margin-top: 15px 
+              line-height: 1.8em 
+            & a 
+              display: inline-block 
+              font-size: 15px 
+              color: #ffc000
+              transition: .3s linear 
+              margin-top: 15px 
+              &:hover 
+                text-decoration: underline
+              & .fas 
+                +solid 
+                color: #736F72
+                margin-right: 5px   
+
+
+            
+
+
+
+
