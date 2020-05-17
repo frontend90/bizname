@@ -1,6 +1,9 @@
 @media screen and ( max-width: 1180px )
   .container 
     max-width: 95%  
+  .fancybox 
+    & img 
+      width: 100%
 @media screen and ( max-width: 1100px )
   .block-main 
     & .block-main-wrap 
@@ -23,6 +26,22 @@
             width: 70%
           & .right 
             margin-top: 50px 
+@media screen and ( max-width: 1085px )
+  .block-about 
+    & .block-about-wrap
+      & .block 
+        flex-direction: column 
+        & .img 
+          margin: auto 
+          width: 
+        & .content 
+          margin: 50px auto 0 
+          text-align: center
+          & a 
+            margin: 15px auto 0 
+      & .block2 
+        & .img
+          margin-top: 50px 
 @media screen and ( max-width: 1050px )
   .block-main 
     & .block-main-wrap 
@@ -33,6 +52,22 @@
         width: 50%
       & .main 
         margin-top: 50px 
+@media screen and ( max-width: 1085px )
+  .block-about 
+    & .block-about-wrap
+      & .block 
+        & .img 
+          width: 50%
+@media screen and ( max-width: 1000px )
+  .block-services
+    & .block-services-wrap
+      & .block 
+        flex-wrap: wrap
+        justify-content: space-around
+        margin: 20px 0 0 0
+        & .card 
+          width: 40%
+          margin-top: 50px 
 @media screen and ( max-width: 850px )
   .header 
     & .header-nav
@@ -102,6 +137,23 @@
           & .main-title-wrap
             & .block 
               width: 100%
+  .block-services
+    & .block-services-wrap
+      & .block 
+        flex-direction: column 
+        & .card 
+          width: 60%
+          margin: 50px auto 0 
+@media screen and ( max-width: 600px )
+  .block-about 
+    & .block-about-wrap
+      & .block 
+        & .img 
+          width: 100%
+          & img 
+            width: 100%
+        & .content 
+          width: 100%
 @media screen and ( max-width: 540px )
   .block-main 
     & .block-main-wrap 
@@ -117,3 +169,15 @@
       font-size: 75px 
       & h1 
         font-size: 70%
+@media screen and ( max-width: 450px )
+  .block-services
+    & .block-services-wrap
+      & .block 
+        & .card 
+          width: 90%
+@media screen and ( max-width: 400px )
+  .block-services
+    & .block-services-wrap
+      & .block 
+        & .card 
+          width: 100%

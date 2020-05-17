@@ -1,0 +1,46 @@
+.block-about
+  position: relative
+  z-index: 1
+  & .block-about-wrap
+    background: #ffffff
+    padding: 40px 30px 80px 
+    margin: -40px 0 
+    & .title 
+      text-align: center
+      margin-bottom: 25px 
+      & h5 
+        font-size: 49px 
+        +semi 
+        color: #736f72
+    & .block 
+      margin-top: 70px
+      display: flex 
+      justify-content: space-between
+      & .img 
+        width: 33%
+        & img 
+          width: calc(100% - 30px)
+      & .content 
+        width: 66%
+        & h5 
+          font-size: 28px 
+          color: #ffc000
+          +semi 
+        & p 
+          margin-top: 15px 
+          +light 
+          color: #999999
+          line-height: 1.8em 
+        & a 
+          display: flex 
+          align-items: center
+          justify-content: center
+          margin-top: 15px 
+          color: #fff
+          background: #ffc000
+          transition: 0.3s linear 
+          font-size: 16px 
+          width: 125px 
+          height: 35px 
+          &:hover
+            background: #736f72
