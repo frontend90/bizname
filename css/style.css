@@ -575,7 +575,7 @@ body.no-scroll {
 }
 
 .info-services {
-  background: url(../img/block-about/bg.jpg) no-repeat;
+  background: url(../img/block-services/bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -677,6 +677,64 @@ body.no-scroll {
 
 .block-services .block-services-wrap .block-bottom {
   margin-top: 75px;
+}
+
+.info-error {
+  background: url(../img/block-error/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 150px;
+}
+
+.block-error {
+  position: relative;
+  z-index: 1;
+}
+
+.block-error .title {
+  background: #ffffff;
+  padding: 360px 15px;
+  margin: -40px 0;
+  text-align: center;
+}
+
+.block-error .title h2 {
+  text-transform: uppercase;
+  color: #ffc000;
+  font-size: 252px;
+  font-family: 'SourceSansPro-Semibold';
+  line-height: 1.1;
+}
+
+.block-error .title p {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #4f4844;
+}
+
+.block-error .title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px auto 0;
+  background: #736f72;
+  color: #ffffff;
+  width: 165px;
+  height: 40px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  font-size: 14px;
+}
+
+.block-error .title a:hover {
+  background: #ffc000;
 }
 
 .footer {
@@ -934,6 +992,15 @@ body.no-scroll {
 @media screen and (max-width: 450px) {
   .block-services .block-services-wrap .block .card {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .block-error .title {
+    font-size: 252px;
+  }
+  .block-error .title h2 {
+    font-size: 70%;
   }
 }
 
